@@ -26,6 +26,18 @@ module.exports = {
         test: /\.(ts|tsx)$/,
         loader: "ts-loader"
       },
+      {
+        test: /\.css$/,
+        use: ["handlebars-loader", "extract-loader", "css-loader"]
+      },
+      {
+        test: /\.(pdf|jpg|png|gif|svg|ico)$/,
+        use: [
+          {
+            loader: "url-loader"
+          }
+        ]
+      },
       { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
     ]
   },
