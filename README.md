@@ -1,3 +1,3 @@
 # ImageDetection
 
-![Site](src/images/ImageGithub.png)
+![Site](src/images/imageGithub.png)
