@@ -38,7 +38,7 @@ export default class Container extends React.Component<{}, IState> {
           handleChangeUrl={this.handleChangeUrl}
           handleSubmitUrl={this.handleSubmitUrl}
         />
-        <div className="row">
+        <div className="row container-fluid">
           <div className="col-sm-6">
             <img
               src={this.state.url ? this.state.url : null}
